@@ -41,7 +41,7 @@ This is a typical intrusion detection workflow in cybersecurity. Instead of insp
 3. Run the notebook cells in order
 4. The code will read the data folder automatically and generate outputs in 'figures/' and 'results/'
 
-### Setup environment
+### Setup environmet
 
 **Mac/Linux:**
 \`\`\`bash
