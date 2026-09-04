@@ -37,20 +37,40 @@ This is a typical intrusion detection workflow in cybersecurity. Instead of insp
 
 1. Open the repository in VS Code or Jupyter
 2. Make sure the environment has the dependencies installed
+3. Import all CICIDS2017 CSV files from the TrafficLabelling dataset into the project's /data folder.
 3. Run the notebook cells in order
 4. The code will read the data folder automatically and generate outputs in 'figures/' and 'results/'
 
-Example:
+### Setup environment
 
-'''bash
-cd "D7084E AI For Cybersecurity XAI/Lab1"
-python -m venv .venv
+**Mac/Linux:**
+\`\`\`bash
+cd "D7084E_XAI_Lab1"
+python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 jupyter notebook
-'''
+\`\`\`
 
-Then open 'intrusion_detector.ipynb' and run all cells.
+**Windows:**
+\`\`\`bash
+cd "D7084E_XAI_Lab1"
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+jupyter notebook
+\`\`\`
+
+### Running a Quicker Version
+
+If you want to run a quicker version, change `USE_SAMPLE = False` to
+`USE_SAMPLE = True`. This will make the code train on a smaller
+random sample (25%) of the CSV data rather than the full dataset.
+You can find this variable in the second cell.
+
+### Run
+
+Then open `intrusion_detector.ipynb` and run all cells.
 
 ## Notes
 
